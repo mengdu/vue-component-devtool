@@ -15,8 +15,12 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="less">
+  @btn-name: m-button;
+  .@{btn-name}{
+    color: #fff;
+  }
   h1{
-    font-weight: 100;
+    font-weight: 200;
   }
 </style>

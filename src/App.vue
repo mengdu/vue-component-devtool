@@ -6,8 +6,8 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld'
-import HelloWorld from '../dist/index'
+import HelloWorld from './components/HelloWorld'
+// import HelloWorld from '../dist/index'
 // console.log(require('./index'))
 console.log(HelloWorld)
 export default {
