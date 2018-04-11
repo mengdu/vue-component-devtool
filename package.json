@@ -12,8 +12,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js",
-    "pack": "node build/pack.js"
+    "docs": "node build/docs.js",
+    "build": "node build/build.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -70,6 +70,7 @@
     "vue": "^2.5.2",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
+    "vue-markdown-loader": "^2.4.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",

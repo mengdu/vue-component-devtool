@@ -2,18 +2,21 @@
   <div id="app">
     <img src="./assets/logo.png">
     <HelloWorld/>
+    <Test></Test>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from '@/index'
 // import HelloWorld from '../dist/index'
 // console.log(require('./index'))
+import Test from './test.md'
 console.log(HelloWorld)
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Test
   }
 }
 </script>

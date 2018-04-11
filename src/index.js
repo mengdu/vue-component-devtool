@@ -4,4 +4,6 @@ import HelloWorld from './HelloWorld'
 //   name: 'HelloWorld',
 //   title: 'this is a test.'
 // }
+HelloWorld.install = function (Vue) {}
+
 export default HelloWorld

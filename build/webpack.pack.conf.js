@@ -24,7 +24,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     })
   },
   devtool: config.pack.devtool,
-  entry: './src/components/index.js',
+  // entry: './src/packages/index.js',
+  entry: './src/index.js',
   output: {
     path: config.pack.assetsRoot,
     filename: 'index.js',
