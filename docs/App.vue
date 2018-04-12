@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-    <Test></Test>
+    <header>
+      <img src="./assets/logo.png">
+      <HelloWorld />
+    </header>
+    <main>
+      <Test></Test>
+    </main>
   </div>
 </template>
 
@@ -22,12 +26,26 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Cabin Sketch', 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    padding: 0;
+    margin: 0;
+    color: #2c3e50;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  header {
+    font-family: 'Cabin Sketch', 'Avenir', Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+  }
+  main {
+    text-align: center;
+  }
+  code {
+    padding: 5px 15px;
+    background: #F6F8FA;
+    border-radius: 5px;
+    color: #24292E;
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  }
 </style>
