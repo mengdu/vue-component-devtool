@@ -39,7 +39,15 @@ export default {
     margin-top: 60px;
   }
   main {
-    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+  }
+  blockquote {
+    margin: 0;
+    padding: 0.05em 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    background: #f3f3f3;
   }
   code {
     padding: 5px 15px;

@@ -1,4 +1,4 @@
-<m-button @click="handleClick" >button</m-button>
+<!-- <m-button @click="handleClick" >button</m-button> -->
 <script>
   export default {
     methods: {
@@ -30,10 +30,9 @@ npm run build
 npm run docs
 ```
 
-
-:::demo 
+:::demo 在线demo
 ```html
-    <h1>xxx</h1>
-    <m-button @click="handleClick" >button</m-button>
+<h1>xxx</h1>
+<m-button @click="handleClick" >button</m-button>
 ```
 :::
