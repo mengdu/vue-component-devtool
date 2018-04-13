@@ -75,7 +75,7 @@ module.exports = {
                 if (tokens[idx].nesting === 1) {
                   var description = (m && m.length > 1) ? m[1] : '';
                   var content = tokens[idx + 1].content;
-                  var html = convert(striptags.strip(content, ['script', 'style'])).replace(/(<[^>]*)=""(?=.*>)/g, '$1');
+                  var html = convert(striptags.strip(content, ['script', 'style', 'head'])).replace(/(<[^>]*)=""(?=.*>)/g, '$1');
                   var script = striptags.fetch(content, 'script');
                   var style = striptags.fetch(content, 'style');
                   var jsfiddle = { html: html, script: script, style: style };
@@ -84,7 +84,7 @@ module.exports = {
                     : '';
         
                   jsfiddle = md.utils.escapeHtml(JSON.stringify(jsfiddle));
-                  console.log(description)
+
                   return `<demo-block class="demo-box" :jsfiddle="${jsfiddle}">
                             <div class="source" slot="source">${html}</div>
                             ${descriptionHTML}
