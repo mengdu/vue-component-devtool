@@ -46,6 +46,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      '~': resolve(''),
     }
   },
   module: {
@@ -60,7 +61,7 @@ module.exports = {
           use: [
             // 创建标题锚点
             [require('markdown-it-anchor'), {
-              level: 2,
+              level: 1,
               slugify: slugify,
               permalink: true,
               permalinkBefore: true

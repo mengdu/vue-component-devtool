@@ -2,6 +2,9 @@
 
 > A Vue.js component devtool
 
+在 `m-button` 分支有一个例子。 
+[Example](https://github.com/mengdu/vue-component-devtool/tree/m-button)
+
 开发
 
 ```bat
