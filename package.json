@@ -1,9 +1,10 @@
 {
-  "name": "vue-component-devtool",
+  "name": "m-button",
   "version": "1.0.0",
-  "description": "A Vue.js component devtool",
+  "description": "A button component for vue.",
   "author": "lanyueos@qq.com",
   "private": true,
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

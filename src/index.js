@@ -1,9 +1,9 @@
-import HelloWorld from './HelloWorld'
+import MButton from './button'
+import MButtonGroup from './button-group'
 
-// export default {
-//   name: 'HelloWorld',
-//   title: 'this is a test.'
-// }
-HelloWorld.install = function (Vue) {}
+MButton.install = function (Vue) {
+  Vue.component(MButton.name, MButton)
+  Vue.component(MButtonGroup.name, MButtonGroup)
+}
 
-export default HelloWorld
+export default MButton
