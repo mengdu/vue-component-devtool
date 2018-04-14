@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <fork-link repo="https://github.com/mengdu/vue-component-devtool" />
+    <fork-link :repo="repo" />
     <header>
       <img src="./assets/logo.png">
       <HelloWorld />
     </header>
     <main>
+      <readme></readme>
       <Doc/>
     </main>
     <layout-footer></layout-footer>
@@ -18,6 +19,8 @@ import LayoutFooter from './components/footer'
 import ForkLink from './components/fork-link'
 
 import Doc from './doc.md'
+import Readme from '~/README.md'
+import pkg from '~/package.json'
 
 export default {
   name: 'App',
@@ -25,7 +28,18 @@ export default {
     HelloWorld,
     Doc,
     LayoutFooter,
-    ForkLink
+    ForkLink,
+    Readme
+  },
+  data () {
+    return {
+      pkg
+    }
+  },
+  computed: {
+    repo () {
+      return pkg.repository.url.replace(/git\+/, '')
+    }
   }
 }
 </script>

@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import DemoBlock from './components/demo-block'
-import MButton from './MButton'
+import MButton from 'vue-m-button'
+import 'vue-m-button/dist/css/default.css'
 
-Vue.component('MButton', MButton)
+Vue.use(MButton)
 Vue.component('DemoBlock', DemoBlock)
 Vue.config.productionTip = false
 
