@@ -9,6 +9,7 @@ Vue.component('MButton', MButton)
 Vue.component('DemoBlock', DemoBlock)
 Vue.config.productionTip = false
 
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

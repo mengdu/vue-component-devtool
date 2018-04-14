@@ -1,8 +1,8 @@
 <template>
   <footer class="layout-footer">
-    <div style="width: 800px; margin: 0 auto">
+    <div style="max-width: 800px; margin: 0 auto">
       <ul class="copyright">
-        <li>© 2018 Lanyueos.com &lt;lanyueos@qq.com&gt;.</li>
+        <li>© 2018 Lanyue.</li>
         <li><a href="https://www.lanyueos.com">Home</a></li>
         <li><a href="https://blog.lanyueos.com">Blog</a></li>
         <li><a href="https://github.com/mengdu">Github</a></li>

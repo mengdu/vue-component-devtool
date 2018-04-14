@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <fork-link repo="https://github.com/mengdu/vue-component-devtool" />
     <header>
       <img src="./assets/logo.png">
       <HelloWorld />
@@ -13,17 +14,18 @@
 
 <script>
 import HelloWorld from '@/index'
-import LayoutFooter from './components/footer' 
-// import HelloWorld from '../dist/index'
-// console.log(require('./index'))
+import LayoutFooter from './components/footer'
+import ForkLink from './components/fork-link'
+
 import Doc from './doc.md'
-// console.log(HelloWorld)
+
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Doc,
-    LayoutFooter
+    LayoutFooter,
+    ForkLink
   }
 }
 </script>
@@ -49,7 +51,7 @@ export default {
   main {
     margin: 0 auto;
     padding: 15px;
-    width: 800px;
+    max-width: 800px;
     margin-bottom: 100px;
     background: #fff;
   }
