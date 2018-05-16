@@ -46,6 +46,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      '~': resolve(''),
     }
   },
   module: {
@@ -60,7 +61,7 @@ module.exports = {
           use: [
             // 创建标题锚点
             [require('markdown-it-anchor'), {
-              level: 2,
+              level: 1,
               slugify: slugify,
               permalink: true,
               permalinkBefore: true
@@ -75,14 +76,13 @@ module.exports = {
                 if (tokens[idx].nesting === 1) {
                   var description = (m && m.length > 1) ? m[1] : '';
                   var content = tokens[idx + 1].content;
-                  var html = convert(striptags.strip(content, ['script', 'style'])).replace(/(<[^>]*)=""(?=.*>)/g, '$1');
+                  var html = convert(striptags.strip(content, ['script', 'style', 'head'])).replace(/(<[^>]*)=""(?=.*>)/g, '$1');
                   var script = striptags.fetch(content, 'script');
                   var style = striptags.fetch(content, 'style');
                   var jsfiddle = { html: html, script: script, style: style };
                   var descriptionHTML = description
                     ? md.render(description)
                     : '';
-        
                   jsfiddle = md.utils.escapeHtml(JSON.stringify(jsfiddle));
                   return `<demo-block class="demo-box" :jsfiddle="${jsfiddle}">
                             <div class="source" slot="source">${html}</div>

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{msg}}</h1>
-    <p>一个用于 Vue 组件开发，打包的脚手架模板。</p>
+    <p>基于 webpack 打造的 Vue 组件开发工具。</p>
   </div>
 </template>
 

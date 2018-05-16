@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "A Vue.js component devtool",
   "author": "lanyueos@qq.com",
-  "private": true,
-  "main": "dist/index.js",
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": {
+    "type": "https",
+    "url": "git+https://github.com/mengdu/vue-component-devtool"
+  },
+  "bugs": {
+    "url": "https://github.com/mengdu/vue-component-devtool/issues"
+  },
+  "homepage": "https://mengdu.github.io/vue-component-devtool/example/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -77,6 +85,7 @@
     "vue-markdown-loader": "^2.4.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
+    "vue-m-button": "^1.0.0",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
