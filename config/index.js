@@ -45,7 +45,7 @@ module.exports = {
   pack: {
     // library: 'jQuery',
     libraryTarget: 'umd',
-    libraryExport: 'default',
+    libraryExport: '',
     umdNamedDefine: true,
     // Template for index.html
     // index: path.resolve(__dirname, '../dist/index.html'),

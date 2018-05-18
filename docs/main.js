@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import './assets/common.css'
 import DemoBlock from './components/demo-block'
 import MButton from 'vue-m-button'
 import 'vue-m-button/dist/css/default.css'

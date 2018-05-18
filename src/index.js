@@ -1,9 +1,7 @@
-import HelloWorld from './HelloWorld'
+import Component from './HelloWorld'
 
-// export default {
-//   name: 'HelloWorld',
-//   title: 'this is a test.'
-// }
-HelloWorld.install = function (Vue) {}
+Component.install = function (Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default HelloWorld
+export default Component

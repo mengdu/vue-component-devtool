@@ -7,6 +7,7 @@
 [Example](https://mengdu.github.io/m-button/example/)
 
 
+
 **功能**
 
 + 打包vue组件，导出 `umd` 模式
@@ -16,9 +17,11 @@
 > 目前仅支持单组件打包导出
 
 
+
+
 **目录**：
 
-```html
+```text
 ├─build
 ├─config
 ├─dist
@@ -27,11 +30,14 @@
 ├─src 组件源码，以 `index.js` 导出组件
 ├─docs 文档及在线列子源码
 ├─example 生成的文档及在线例子
+├─index.js 用于导出包和css加载
 
 ```
 
 
 可以在 `docs` 的文件里 `import MyComponent from '@/index'` 载入你的组件。
+
+
 
 
 
@@ -67,3 +73,5 @@ npm run docs
 [element-ui](https://github.com/ElemeFE/element)
 
 [vue-markdown-loader](https://github.com/QingWei-Li/vue-markdown-loader)
+
+-----

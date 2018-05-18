@@ -3,9 +3,20 @@
     <fork-link :repo="repo" />
     <header>
       <img src="./assets/logo.png">
-      <HelloWorld />
+      <h1>{{pkg.name}}</h1>
+      <p>{{pkg.description}}</p>
+      <div class="text-center" style="padding: 15px;">
+        <a :href="repo" target="_blank">
+          <m-button type="info" size="large" round>
+            <img src="https://avatars1.githubusercontent.com/u/11366654?s=40&v=4" class="user-img" alt="mengdu">
+            Github
+          </m-button>
+        </a>
+        &nbsp;
+        <a href="#example"><m-button type="warning" size="large" plain round>Example</m-button></a>
+      </div>
     </header>
-    <main>
+    <main class="doc-block">
       <readme></readme>
       <Doc/>
     </main>
@@ -14,10 +25,8 @@
 </template>
 
 <script>
-import HelloWorld from '@/index'
 import LayoutFooter from './components/footer'
 import ForkLink from './components/fork-link'
-
 import Doc from './doc.md'
 import Readme from '~/README.md'
 import pkg from '~/package.json'
@@ -25,7 +34,6 @@ import pkg from '~/package.json'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Doc,
     LayoutFooter,
     ForkLink,
@@ -43,55 +51,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  body{
-    padding: 0;
-    margin: 0;
-    color: #2c3e50;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: #F6F6F6;
-    font-size: 14px;
-  }
-  header {
-    font-family: 'Cabin Sketch', 'Avenir', Helvetica, Arial, sans-serif;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 15px;
-    background: #41B883;
-    color: #fff;
-  }
-  main {
-    margin: 0 auto;
-    padding: 15px;
-    max-width: 800px;
-    margin-bottom: 100px;
-    background: #fff;
-  }
-  blockquote {
-    margin: 0;
-    padding: 0.05em 1em;
-    color: #6a737d;
-    border-left: 0.25em solid #dfe2e5;
-    background: #f3f3f3;
-  }
-  a{
-    color: #0366D6;
-    text-decoration: none;
-  }
-  .hljs{
-    background: #FAFAFA;
-  }
-  code {
-    color: #ED4C6B;
-    background-color: #F6F8FA;
-    margin: 0 4px;
-    display: inline-block;
-    padding: 1px 5px;
-    font-size: 12px;
-    border-radius: 3px;
-    line-height: 18px;
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
-  }
-</style>

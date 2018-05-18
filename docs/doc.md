@@ -9,12 +9,13 @@
   }
 </script>
 
-## 在线例子
+## Online demo
 
 :::demo 在线 `demo`。
 
 ```html
-<m-button @click="handleClick" type="info">button</m-button>
+<m-button @click="handleClick" type="info">info</m-button>
+<m-button @click="handleClick" type="danger">danger</m-button>
 ```
 
 :::

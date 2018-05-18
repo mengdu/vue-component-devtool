@@ -32,7 +32,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // filename: utils.assetsPath('js/[name].[chunkhash].js'),
     // chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
     library: config.pack.library,
-    libraryExport: config.pack.libraryExport || 'default',
+    libraryExport: config.pack.libraryExport,
     // iife(web) , cjs(node) , umd(web&node)
     libraryTarget: config.pack.libraryTarget,
     umdNamedDefine: config.pack.umdNamedDefine

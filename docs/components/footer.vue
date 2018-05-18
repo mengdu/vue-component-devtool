@@ -19,10 +19,10 @@
   .copyright{
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 13px;
     list-style: none;
     color: #586069;
-    font-weight: 100;
+    font-weight: 400;
   }
   .copyright li {
     display: inline-block;
