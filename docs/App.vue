@@ -3,7 +3,7 @@
     <fork-link :repo="repo" />
     <header>
       <img src="./assets/logo.png">
-      <h1>{{pkg.name}}</h1>
+      <h1>{{pkg.name}} <span>{{pkg.version}}</span></h1>
       <p>{{pkg.description}}</p>
       <div class="text-center" style="padding: 15px;">
         <a :href="repo" target="_blank">
@@ -41,7 +41,8 @@ export default {
   },
   data () {
     return {
-      pkg
+      pkg,
+      test: 'xxx'
     }
   },
   computed: {

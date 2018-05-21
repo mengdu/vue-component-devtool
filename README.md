@@ -1,12 +1,25 @@
 # vue-component-devtool
 
-> 基于 webpack 打造的 Vue 组件开发工具。可以编写例子，文档。
+基于 webpack 的 Vue 组件开发工具。可以编写例子，文档。
+
 > 基于vue init webpack 模板修改，参照了 [element-ui](https://github.com/ElemeFE/element) 的实现。
 
 
 [Example](https://mengdu.github.io/m-button/example/)
 
+**use**
 
+```ls
+git clone https://github.com/mengdu/vue-component-devtool my-component
+```
+
+**安装依赖**
+
+```ls
+yarn
+# or
+npm install
+```
 
 **功能**
 
@@ -14,28 +27,24 @@
 + 支持 `markdown` 解析
 + `markdwon` 可以编写编写vue例子
 
-> 目前仅支持单组件打包导出
-
-
-
 
 **目录**：
 
 ```text
-├─build
-├─config
-├─dist
+├─build 开发工具
+├─config 开发配置
+├─dist 打包后内容
 │  ├─index.js
 │  └─css
 ├─src 组件源码，以 `index.js` 导出组件
 ├─docs 文档及在线列子源码
 ├─example 生成的文档及在线例子
 ├─index.js 用于导出包和css加载
-
 ```
 
 
 可以在 `docs` 的文件里 `import MyComponent from '@/index'` 载入你的组件。
+
 
 
 

@@ -1,7 +1,11 @@
-import Component from './HelloWorld'
+import MInput from './input'
+import './input.less'
 
-Component.install = function (Vue) {
-  Vue.component(Component.name, Component)
+MInput.install = function (Vue) {
+  Vue.component(MInput.name, MInput)
 }
 
-export default Component
+export {
+  MInput as default,
+  MInput
+}

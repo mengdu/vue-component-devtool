@@ -15,6 +15,7 @@
 <style>
   .layout-footer{
     height: 100px;
+    text-align: center;
   }
   .copyright{
     margin: 0;

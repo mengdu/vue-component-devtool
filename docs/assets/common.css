@@ -21,6 +21,8 @@ header h1{
 }
 main {
   margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 5px;
   padding: 20px 25px;
   max-width: 800px;
   margin-bottom: 100px;
@@ -39,7 +41,7 @@ a{
   text-decoration: none;
 }
 .hljs{
-  background: #FAFAFA;
+  background: #f6f8fa;
 }
 .user-img{
   width: 20px;
@@ -49,11 +51,11 @@ a{
   vertical-align: middle;
 }
 code {
-  color: #bc3dda;
+  color: #d438c7;
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
+  background-color: #f6f8fa;
   border-radius: 3px;
   font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }
@@ -77,6 +79,13 @@ code {
 
 .doc-block p{
   margin-bottom: 16px;
+  padding: 5px 0;
+}
+.doc-block h1,
+.doc-block h2,
+.doc-block h3,
+.doc-block h4{
+  padding: 10px 0;
 }
 .doc-block h1,
 .doc-block h2,
@@ -88,7 +97,7 @@ code {
   margin-bottom: 16px;
 }
 .doc-block pre{
-  padding: 16px;
+  padding: 10px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
