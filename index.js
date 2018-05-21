@@ -1,6 +1,7 @@
-import {XCompoent} from './dist/index'
+import {MInput} from './dist/index'
+import './dist/css/default.css'
 
 export {
-  XComnent as default,
-  XComnent
+  MInput as default,
+  MInput
 }
