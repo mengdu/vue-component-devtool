@@ -12,6 +12,15 @@
   "bugs": {
     "url": "https://github.com/mengdu/vue-component-devtool/issues"
   },
+  "keywords": [
+    "vue-component-devtool"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "example",
+    "index.js"
+  ],
   "homepage": "https://mengdu.github.io/vue-component-devtool/example/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
