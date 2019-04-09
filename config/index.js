@@ -43,10 +43,10 @@ module.exports = {
     cssSourceMap: true
   },
   pack: {
-    // library: 'jQuery',
+    library: '$myapp',
     libraryTarget: 'umd',
     // 暴露指定模块，空表示暴露 module.exports
-    libraryExport: '',
+    libraryExport: 'default',
     umdNamedDefine: true,
     // Template for index.html
     // index: path.resolve(__dirname, '../dist/index.html'),
