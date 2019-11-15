@@ -21,7 +21,7 @@ export default {
         this.val = val
       }
     },
-    val (val) {
+    val () {
       if (this.value !== this.val) {
         this.$emit('input', this.val)
       }
