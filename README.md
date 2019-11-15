@@ -1,11 +1,10 @@
 # vue-component-devtool
 
+> 通过 [vue-cli](https://cli.vuejs.org) 初始化；采用 [vue-dotmd-loader](https://github.com/mengdu/vue-dotmd-loader) 来加载文档。
+
+
 基于 webpack 的 Vue 组件开发工具。可以编写例子，文档。
 
-> 基于vue init webpack 模板修改，参照了 [element-ui](https://github.com/ElemeFE/element) 的实现。
-
-
-[Example](https://mengdu.github.io/m-button/example/)
 
 **use**
 
@@ -32,21 +31,13 @@ npm install
 
 ```text
 ├─build 开发工具
-├─config 开发配置
-├─dist 打包后内容
-│  ├─index.js
-│  └─css
-├─src 组件源码，以 `index.js` 导出组件
-├─docs 文档及在线列子源码
-├─example 生成的文档及在线例子
-├─index.js 用于导出包和css加载
+├─docs 打包后的文档
+├─dist 打包后库
+│  ├─index.umd.js
+│  └─index.css
+├─src 组件源码
+├─examples 文档源码
 ```
-
-
-可以在 `docs` 的文件里 `import MyComponent from '@/index'` 载入你的组件。
-
-
-
 
 
 
@@ -59,11 +50,10 @@ npm run dev
 打开 `http://localhost:8080` 查看效果。
 
 
-
 **打包组件**
 
 ```ls
-npm run build
+npm run build:lib
 ```
 
 打包后组件被打包成js和css在 `dist` 文件夹中。
@@ -71,16 +61,13 @@ npm run build
 **生成文档**
 
 ```ls
-npm run docs
+npm run build:docs
 ```
 
-生成文档在 `example` 文件夹，打开 `index.html` 可可以浏览。上传Github后可以在Github 开启项目Page访问。
-
+生成文档在 `docs` 文件夹，打开 `index.html` 可以浏览。上传 Github 后可以开启项目 Page 访问。
 
 ## Other
 
-[element-ui](https://github.com/ElemeFE/element)
-
-[vue-markdown-loader](https://github.com/QingWei-Li/vue-markdown-loader)
+[vue-dotmd-loader](https://github.com/mengdu/vue-dotmd-loader)
 
 -----

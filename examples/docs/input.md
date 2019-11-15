@@ -1,5 +1,7 @@
 # Input
 
-> 这种一个文档案例
+> 这是一个编写文档例子
 
 [demo:vue](./input-demo.vue)
+
+----
