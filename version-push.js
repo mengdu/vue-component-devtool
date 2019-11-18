@@ -28,7 +28,6 @@ function main () {
 
   if (!hasNewVersion) {
     console.warn(chalk.yellow('Not new version, exit task'))
-    process.exit(1)
   }
 }
 

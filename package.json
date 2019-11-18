@@ -9,7 +9,7 @@
     "build:docs": "vue-cli-service build",
     "build:lib": "vue-cli-service lint && vue-cli-service build --dest dist --target lib --name index src/index.js",
     "lint": "vue-cli-service lint",
-    "version-push": "node version-push.js && git add version.md && git commit -m \"chore(version): New version\"",
+    "version-push": "node version-push.js && git add version.md && git commit -m \"chore(version): New version\" -uno && ls",
     "open": "dev serve -o docs"
   },
   "dependencies": {
