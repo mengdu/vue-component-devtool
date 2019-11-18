@@ -1,3 +1,4 @@
+const camelcase = require('camelcase')
 const pkg = require('./package.json')
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -38,6 +39,10 @@ module.exports = {
       alias: {
         'vue$': 'vue/dist/vue.esm.js' // esm 版本支持template模板编译
       }
+    },
+    output: {
+      // window.xxx
+      library: pkg.libraryName || camelcase(pkg.name, { pascalCase: true }) // 名字大驼峰
     }
   },
   chainWebpack (config) {

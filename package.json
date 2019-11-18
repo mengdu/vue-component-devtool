@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:docs": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --dest dist --target lib --name index src/index.js",
+    "build:lib": "vue-cli-service lint && vue-cli-service build --dest dist --target lib --name index src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
