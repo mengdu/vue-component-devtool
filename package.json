@@ -5,9 +5,12 @@
   "main": "dist/index.umd.js",
   "scripts": {
     "dev": "vue-cli-service serve",
+    "docs": "npm run build:docs && npm run version-push",
     "build:docs": "vue-cli-service build",
     "build:lib": "vue-cli-service lint && vue-cli-service build --dest dist --target lib --name index src/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "version-push": "node version-push.js && git add version.md && git commit -m \"chore(version): New version\"",
+    "open": "dev serve -o docs"
   },
   "dependencies": {
     "core-js": "^3.3.2",
