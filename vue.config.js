@@ -59,7 +59,7 @@ module.exports = {
       .use('vue-dotmd-loader')
       .loader('vue-dotmd-loader')
       .options({
-        dest: true,
+        dest: false,
         markdown: {
           options: {
             html: true
