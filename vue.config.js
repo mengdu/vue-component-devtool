@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   publicPath: isProd ? './' : "/",
-  outputDir: 'docs/v' + pkg.version,
+  outputDir: 'docs',
   // assetsDir: '', // 放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录。
   indexPath: 'index.html', // 指定生成的 index.html 的输出路径 (相对于 outputDir)。默认 index.html
   pages: {
