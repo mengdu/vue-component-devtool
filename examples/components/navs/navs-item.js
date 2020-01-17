@@ -18,6 +18,7 @@ export default {
   props: {
     menu: Object
   },
+  // eslint-disable-next-line no-unused-vars
   render (h) {
     const menu = this.menu
     const label = <div class="v-navs-item--label">{renderItemLabel(this, menu)}</div>
