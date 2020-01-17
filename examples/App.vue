@@ -1,21 +1,22 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <div class="doc-container">
-      <doc-component :docs="docs" value="readme" />
-    </div>
+    <MainHeader />
+    <div class="main-container"><router-view /></div>
+    <MainFooter />
   </div>
 </template>
 
 <script>
 import ReadmeDoc from '../README.md'
 import InputDoc from './docs/input'
-import DocComponent from './components/doc-component'
+import MainHeader from './components/main-header'
+import MainFooter from './components/main-footer'
 
 export default {
   name: 'app',
   components: {
-    DocComponent
+    MainHeader,
+    MainFooter
   },
   data () {
     return {
