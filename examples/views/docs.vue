@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import DocIndex from '../docs/input.md'
+import DocIndex from '../docs/index.md'
 
 export default {
   components: { DocIndex }

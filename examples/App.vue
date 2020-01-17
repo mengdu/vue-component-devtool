@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import ReadmeDoc from '../README.md'
-import InputDoc from './docs/input'
 import MainHeader from './components/main-header'
 import MainFooter from './components/main-footer'
 
@@ -17,15 +15,6 @@ export default {
   components: {
     MainHeader,
     MainFooter
-  },
-  data () {
-    return {
-      tab: 'readme',
-      docs: [
-        { name: 'readme', label: 'README', component: ReadmeDoc },
-        { name: 'doc', label: 'Doc', component: InputDoc }
-      ]
-    }
   }
 }
 </script>

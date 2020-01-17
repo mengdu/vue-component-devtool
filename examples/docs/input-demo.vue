@@ -4,12 +4,9 @@
   </div>
 </template>
 <script>
-import MInput from '../../src'
+
 
 export default {
-  components: {
-    MInput
-  },
   data () {
     return {
       value: ''
